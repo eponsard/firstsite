@@ -169,4 +169,5 @@ section:not(:first-child) {
 
 .card-body p {
     margin-bottom: 1em;
+    color: #f9f9f9;
 }
