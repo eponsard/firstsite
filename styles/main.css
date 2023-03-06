@@ -171,3 +171,32 @@ section:not(:first-child) {
     margin-bottom: 1em;
     color: #f9f9f9;
 }
+
+/******************** Profil *******************/
+.subject-profil {
+    display: flex;
+}
+
+.subject-profil img {
+    width: 35%;
+    margin-top: 1em;
+}
+
+.text-profil {
+    width: 65%;
+    margin: 2em 0 0 3em ;
+}
+
+.text-profil p {
+    text-align: justify;
+    padding-top: 1em;
+}
+
+.name {
+    color: var(--primary);
+}
+
+span {
+    color: red;
+    font-weight: bold;
+}
