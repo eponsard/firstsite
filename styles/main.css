@@ -1,7 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+@font-face {
+    font-family: 'Foobar';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Foobar'), url('../fonts/Foobar\ Pro-Regular.woff') format('woff');
+    font-display: swap;
+    }
+
 :root {
     --primary: #95D1CC;
     --secondary: #22577E;
     --border-radius: 5px;
+    --box-shadow-default: 1px 1px 30px -10px rgba(0, 0, 0, .7);
 }
 
 /***************** Reset CSS DEFAULT ***************/
@@ -14,7 +25,7 @@
 /***************** STRUCTURE ***********************/
 body {
     background-color: #f9f9f9;
-    font-family: 'Merriweather Sans', serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -22,6 +33,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--secondary);
     margin-bottom: 5px;
     line-height: 120%;
+    font-family: 'Foobar';
 }
 
 h1 {
@@ -113,7 +125,7 @@ em {
     -webkit-backdrop-filter: blur(5px);
     border-radius: var(--border-radius);
     padding: 2em;
-    box-shadow: 0 4px 30px rgba(0,0,0, 0.2);
+    box-shadow: var(--box-shadow-default);
     border: 1px solid rgba(255, 255, 255, 0.3);
     margin-right: 15%;
 }
@@ -222,4 +234,18 @@ em {
     background-color: var(--primary);
     border-radius: var(--border-radius);
     padding: .5em 1em;
+    box-shadow: var(--box-shadow-default);
+}
+
+/********************** CV PROFIL *********************/
+.cv-list {
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+}
+
+.cv-card {
+    background: red;
+    height: 100px;
 }
