@@ -190,12 +190,12 @@ em {
 }
 
 .subject-profil img {
-    width: 25%;
+    width: 30%;
     object-fit: cover;
 }
 
 .text-profil {
-    width: 70%;
+    width: 65%;
 }
 
 .text-profil p {
@@ -208,4 +208,18 @@ em {
 .text-red{
     color: red;
     font-weight: bold;
+}
+
+.label-list {
+    margin-top: 1em;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.label-list li {
+    background-color: var(--primary);
+    border-radius: var(--border-radius);
+    padding: .5em 1em;
 }
