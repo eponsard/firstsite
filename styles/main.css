@@ -57,6 +57,7 @@ section:not(:first-child) {
 
 .btn-primary {
     background-color: var(--primary);
+    transition: all .4s linear;
 }
 
 .btn-primary:hover {
