@@ -14,6 +14,7 @@
 /***************** STRUCTURE ***********************/
 body {
     background-color: #f9f9f9;
+    font-family: 'Merriweather Sans', serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -48,6 +49,14 @@ a {
 
 section:not(:first-child) {
     margin: 2em auto;
+}
+
+p:not(:last-of-type), em {
+    margin-bottom: 1em;
+}
+
+em {
+    display: inline-block;
 }
 
 .btn {
@@ -143,6 +152,7 @@ section:not(:first-child) {
     background: var(--secondary);
     border-radius: var(--border-radius);
     overflow: hidden;
+    box-shadow: 10px 0 10px var(--primary);
 }
 
 .card-img-overflow {
@@ -174,29 +184,28 @@ section:not(:first-child) {
 
 /******************** Profil *******************/
 .subject-profil {
+    margin-top: 2em;
     display: flex;
+    justify-content: space-between;
 }
 
 .subject-profil img {
     width: 25%;
-    margin-top: 1em;
+    object-fit: cover;
 }
 
 .text-profil {
-    width: 75%;
-    margin: 1em 0 0 3em ;
+    width: 70%;
 }
 
 .text-profil p {
     text-align: justify;
-    padding-top: 1em;
 }
-
 .name {
     color: var(--primary);
 }
 
-span {
+.text-red{
     color: red;
     font-weight: bold;
 }
