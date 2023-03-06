@@ -246,6 +246,7 @@ em {
 }
 
 .cv-card {
-    background: red;
+    box-shadow: var(--box-shadow-default);
+    border-radius: var(--border-radius);
     height: 100px;
 }
