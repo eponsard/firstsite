@@ -108,6 +108,14 @@ em {
     gap: 15px;
 }
 
+a {
+    transition: all .4s ease-in-out;
+}
+
+a:hover {
+    color: var(--white);
+}
+
 /****************** BANNER *********************/
 .banner {
     background-image: url('../images/banner-hero.jpeg');
@@ -316,3 +324,64 @@ em {
 .cv-details h3 {
     transition: all .4s ease-in-out;
 } 
+
+/******************* ABOUT *****************/
+.about-informations {
+    margin-top: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.text-about {
+    width: 50%;
+}
+
+.text-about h2 {
+    margin-bottom: .5em;
+}
+
+.text-about a {
+    margin-top: 2em;
+    color: var(--white);
+}
+
+.img-about {
+    width: 40%;
+    position: relative;
+}
+
+.img-about img{
+    width: 60%;
+    margin: auto;
+    display: block;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow-default);
+    transition: all .4s ease-in-out;
+}
+
+.img-about img:hover{
+    transform: scale(1.1);
+}
+
+.primary-square {
+    background: var(--primary);
+    width: 50%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+    right: 35%;
+    z-index: -1;
+    border-radius: var(--border-radius);
+}
+
+.secondary-square {
+ background: var(--secondary);
+width: 50%;
+height: 70%;
+position: absolute;
+top: -8%;
+right: 10%;
+z-index: -1;
+border-radius: var(--border-radius);
+}
