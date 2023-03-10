@@ -232,6 +232,7 @@ em {
 
 .label-list li {
     background-color: var(--primary);
+    color: #fff;
     border-radius: var(--border-radius);
     padding: .5em 1em;
     box-shadow: var(--box-shadow-default);
@@ -239,7 +240,7 @@ em {
 
 /********************** CV PROFIL *********************/
 .cv-list {
-    margin-top: 2em;
+    margin-top: 3em;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1em;
@@ -248,5 +249,39 @@ em {
 .cv-card {
     box-shadow: var(--box-shadow-default);
     border-radius: var(--border-radius);
-    height: 100px;
+    padding: 50px 0 45px;
+    position: relative;
+}
+
+.cv-card span {
+    font-size: 4.4em;
+    color: var(--secondary);
+    position: absolute;
+    top: 50px;
+    right: 5%;
+}
+
+.cv-card h2 {
+    background: var(--primary);
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 1.5em;
+    border-radius: 0 25px 25px 0;
+    margin-bottom: 2em;
+}
+
+.cv-details {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    color: var(--primary);
+}
+
+.cv-details i {
+    font-size: 4.5em;
+}
+
+.cv-details h3 {
+    color: var(--primary);
 }
