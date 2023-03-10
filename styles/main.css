@@ -11,6 +11,7 @@
 :root {
     --primary: #95D1CC;
     --secondary: #22577E;
+    --white: #f9f9f9;
     --border-radius: 5px;
     --box-shadow-default: 1px 1px 30px -10px rgba(0, 0, 0, .7);
 }
@@ -24,7 +25,7 @@
 
 /***************** STRUCTURE ***********************/
 body {
-    background-color: #f9f9f9;
+    background-color: var(--white);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -191,7 +192,7 @@ em {
 
 .card-body p {
     margin-bottom: 1em;
-    color: #f9f9f9;
+    color: var(--white);
 }
 
 /******************** Profil *******************/
@@ -253,22 +254,39 @@ em {
     position: relative;
 }
 
+.cv-card:hover {
+    background: var(--primary);
+    transform: translateY(-5px);
+}
+
 .cv-card span {
     font-size: 4.4em;
     color: var(--secondary);
     position: absolute;
     top: 50px;
     right: 5%;
+
+}
+
+.cv-card:hover span {
+    color: var(--white);
 }
 
 .cv-card h2 {
     background: var(--primary);
     display: inline-block;
     padding: 15px 30px;
-    color: #fff;
+    color: var(--white);
     font-size: 1.5em;
     border-radius: 0 25px 25px 0;
     margin-bottom: 2em;
+}
+
+.cv-card:hover h2 {
+    background: var(--white);
+    color: var(--primary);
+    box-shadow: 0 4px 20px rgba(13, 85, 90, .2);
+    transform: translateY(-4px);
 }
 
 .cv-details {
@@ -285,3 +303,16 @@ em {
 .cv-details h3 {
     color: var(--primary);
 }
+
+.cv-card:hover .cv-details,
+.cv-card:hover .cv-details h3 {
+    color: var(--white);
+}
+
+.cv-card, 
+.cv-card span, 
+.cv-card h2, 
+.cv-details, 
+.cv-details h3 {
+    transition: all .4s ease-in-out;
+} 
